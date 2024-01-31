@@ -46,8 +46,17 @@ function updateIndicators() {
     const prevButton = document.querySelector('.carousel-control-prev');
     const nextButton = document.querySelector('.carousel-control-next');
 
-    prevButton.disabled = currentSlide === 0;
-    nextButton.disabled = currentSlide === totalSlides - 1;
+    if (currentSlide === 0) {
+        prevButton.classList.add('disabled');
+    } else {
+        prevButton.classList.remove('disabled');
+    }
+
+    if (currentSlide === totalSlides - 1) {
+        nextButton.classList.add('disabled');
+    } else {
+        nextButton.classList.remove('disabled');
+    }
 }
 
 function prevSlide() {

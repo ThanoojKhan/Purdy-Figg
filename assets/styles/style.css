@@ -90,14 +90,14 @@ hr {
 	font-weight: 600;
 	width: auto;
 }
-
-.btn:active {
-	border: #030303;
+.btn2 {
+	font-weight: 600;
+	width: auto;
 }
 
-.btn:disabled {
-	outline: none;
-	border: none;
+.btn:hover {
+	transform: scale(1.02);
+	background: #3812c2 !important;
 }
 
 .text {
@@ -390,6 +390,12 @@ header {
 	cursor: pointer;
 }
 
+.carousel-control-prev.disabled,
+.carousel-control-next.disabled {
+    cursor: not-allowed;
+    opacity: 0.5; /* You can adjust the opacity to your preference */
+}
+
 .carousel-control-prev {
 	left: 10px;
 }
@@ -434,6 +440,12 @@ header {
 
 .product-info .border {
 	border: 2px solid var(--color-primary) !important;
+}
+
+.underline-light-gray {
+	border-bottom: 1px solid #ddd;
+	margin: 0 5px;
+	padding-bottom: 5px;
 }
 
 .kit {
@@ -503,7 +515,6 @@ header {
 		display: none !important;
 	}
 }
-
 
 #news-slider {
 	margin-top: 80px;
