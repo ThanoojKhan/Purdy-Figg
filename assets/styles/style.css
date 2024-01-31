@@ -753,7 +753,7 @@ header {
 
 /* SCENTED PRODUCTS  */
 .main-container {
-	height: 514px;
+	height: 550px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -898,6 +898,10 @@ header {
 .comparison-chart {
 	overflow-x: auto;
 }
+
+/* ABOUT PRODUCT */
+
+
 
 /* FOUNDERS */
 
