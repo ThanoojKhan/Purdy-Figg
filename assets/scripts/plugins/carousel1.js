@@ -1,7 +1,5 @@
 let currentSlide = 0;
-const totalSlides = document.querySelectorAll('.carousel-item').length;
-const activeSlideElement = document.getElementById('active-slide');
-const sliderTrack = document.querySelector('.carousel-inner');
+const totalSlides = 4;
 
 function changeSlide(direction) {
     currentSlide += direction;
@@ -19,8 +17,17 @@ function changeSlide(direction) {
 function showSlide(slideIndex) {
     const slides = document.querySelectorAll('.carousel-item');
     slides.forEach((slide, index) => {
-        slide.classList.toggle('active', index === slideIndex);
+        if (index === slideIndex) {
+            slide.classList.add('active');
+        } else {
+            slide.classList.remove('active');
+        }
     });
+
+    if (slideIndex === 0 && currentSlide === totalSlides - 1) {
+        slides[totalSlides - 1].classList.remove('active');
+        slides[slideIndex].classList.add('active');
+    }
 }
 
 function jumpToSlide(slideIndex) {
@@ -35,19 +42,37 @@ function updateIndicators() {
     indicators.forEach((indicator, index) => {
         indicator.classList.toggle('active-indicator', index === currentSlide);
     });
+
+    const prevButton = document.querySelector('.carousel-control-prev');
+    const nextButton = document.querySelector('.carousel-control-next');
+
+    prevButton.disabled = currentSlide === 0;
+    nextButton.disabled = currentSlide === totalSlides - 1;
 }
 
 function prevSlide() {
-    changeSlide(-1);
+    if (currentSlide > 0) {
+        changeSlide(-1);
+    }
 }
 
 function nextSlide() {
-    changeSlide(1);
+    if (currentSlide < 3) {
+        changeSlide(1);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
     updateIndicators();
 });
-sliderTrack.addEventListener('transitionend', function () {
-    sliderTrack.style.transition = '';
+
+const myCarousel = document.getElementById('myCarousel');
+myCarousel.addEventListener('transitionend', function () {
+    if (currentSlide === 0) {
+        myCarousel.style.transition = '';
+        showSlide(totalSlides - 1);
+        setTimeout(() => {
+            myCarousel.style.transition = 'transform 0.5s ease';
+        }, 0);
+    }
 });
