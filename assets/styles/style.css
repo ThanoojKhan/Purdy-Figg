@@ -899,9 +899,6 @@ header {
 	overflow-x: auto;
 }
 
-/* ABOUT PRODUCT */
-
-
 
 /* FOUNDERS */
 
@@ -941,4 +938,55 @@ header {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+}
+
+/* SOCIAL MEDIA */
+
+.video-container {
+	overflow-x: auto;
+	display: flex;
+	scroll-snap-type: x mandatory;
+	margin: 0 -15px !important; 
+}
+
+.post-slide2 {
+	flex: 0 0 auto;
+	scroll-snap-align: start;
+	border-radius: 15px;
+	margin: 0 15px !important; 
+}
+
+.background-video1 {
+	width: 280px;
+	height: 500px;
+	object-fit: cover;
+	border-radius: 15px;
+	margin: 0 15px !important; 
+}
+
+@media (max-width: 768px) {
+	.video-container {
+		overflow-x: scroll;
+		scroll-snap-type: none;
+		scroll-behavior: smooth;
+		white-space: nowrap;
+		margin: 0;
+	}
+
+	.post-slide2 {
+		scroll-snap-align: none;
+		/* flex: 0 0 100%; */
+		border-radius: 15px;
+		margin: 0 15px;
+	}
+}
+
+/* FOOTER */
+
+.bg-footer {
+	background-color: #131E44;
+}
+
+.text-footer{
+	color: #92A4E0;
 }
