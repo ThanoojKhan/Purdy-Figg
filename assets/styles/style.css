@@ -50,6 +50,14 @@ hr {
 	color: var(--color-primary) !important;
 }
 
+.light-font {
+	font-weight: 100 !important;
+}
+
+.bg-light{
+	background-color: #F4F6FC !important;
+}
+
 .text-secondary {
 	color: var(--color-secondary) !important;
 }
