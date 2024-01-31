@@ -24,6 +24,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
     slide();
   });
-
-  // need to change the code
-  // important-donot forget
