@@ -1,3 +1,8 @@
+
+jQuery(document).ready(function ($) {
+    $('nav').scrollNavbar();
+});
+
 (function ($) {
     $.fn.scrollNavbar = function () {
         var prevScrollpos = window.pageYOffset;
