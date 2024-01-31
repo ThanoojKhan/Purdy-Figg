@@ -481,6 +481,59 @@ header {
 	letter-spacing: 0;
 }
 
+/* TEST */
+
+.transform .ps-5 {
+	padding-left: 0 !important;
+}
+
+.transform .pe-5 {
+	padding-right: 0 !important;
+}
+
+.transform .pt-5 {
+	padding-top: 1rem !important;
+}
+
+.transform .w-75 {
+	width: 100% !important;
+}
+
+.ad:first-of-type {
+	flex-direction: row-reverse;
+}
+
+.bg {
+	height: 66%;
+}
+
+.transform .section-title-small {
+	padding-top: 1rem;
+	margin-bottom: 1rem !important;
+}
+
+.transform .add-image {
+	padding: 0 !important;
+}
+
+.transform .add-content .text {
+	margin-bottom: 0 !important;
+}
+
+.add-content .text {
+	font-weight: 600;
+	/* text-align: justify; */
+	font-size: 17px;
+}
+
+@media (max-width: 1024px) {
+
+	.add-content,
+	.add-image.px-5 {
+		padding-inline: 0 !important;
+	}
+}
+
 /* REVIEWS */
 
 .card {
@@ -744,4 +797,19 @@ header {
 	.mobile-screen {
 		display: block;
 	}
+}
+
+/* FOUNDERS */
+
+@media (max-width: 768px) {
+	.fedup {
+		display: none;
+	}
+}
+
+.textcenter {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
