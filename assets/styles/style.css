@@ -365,24 +365,24 @@ header {
 
 /* PRODUCT */
 
-.carousel1 {
+.carousel {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
 }
 
-.carousel1-inner {
+.carousel-inner {
 	width: 100%;
 	display: flex;
 	transition: transform 0.5s ease-in-out;
 }
 
-.carousel1-item {
+.carousel-item {
 	width: 100%;
 	flex: 0 0 auto;
 }
 
-.carousel1-item.active {
+.carousel-item.active {
 	opacity: 1;
 }
 
@@ -390,8 +390,8 @@ header {
 	overflow: hidden;
 }
 
-.carousel1-control-prev,
-.carousel1-control-next {
+.carousel-control-prev,
+.carousel-control-next {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -399,21 +399,21 @@ header {
 	cursor: pointer;
 }
 
-.carousel1-control-prev.disabled,
-.carousel1-control-next.disabled {
+.carousel-control-prev.disabled,
+.carousel-control-next.disabled {
 	cursor: not-allowed;
 	opacity: 0.5;
 }
 
-.carousel1-control-prev {
+.carousel-control-prev {
 	left: 10px;
 }
 
-.carousel1-control-next {
+.carousel-control-next {
 	right: 10px;
 }
 
-.carousel1-indicators {
+.carousel-indicators {
 	display: flex;
 	justify-content: center;
 	margin-top: 10px;
@@ -543,60 +543,6 @@ header {
 }
 
 /* REVIEWS */
-
-.carousel {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-}
-
-.carousel-inner {
-	width: 100%;
-	display: flex;
-	transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-	width: 100%;
-	flex: 0 0 auto;
-}
-
-.carousel-item.active {
-	opacity: 1;
-}
-
-#myCarousel {
-	overflow: hidden;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	font-size: 2rem;
-	cursor: pointer;
-}
-
-.carousel-control-prev.disabled,
-.carousel-control-next.disabled {
-	cursor: not-allowed;
-	opacity: 0.5;
-}
-
-.carousel-control-prev {
-	left: 10px;
-}
-
-.carousel-control-next {
-	right: 10px;
-}
-
-.carousel-indicators {
-	display: flex;
-	justify-content: center;
-	margin-top: 10px;
-}
 
 .card {
 	border: none !important;

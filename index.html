@@ -260,34 +260,32 @@
 			</h3>
 			<div class="row justify-content-center align-items-center">
 				<div class="product-info col-md-6 col-lg-6 my-auto sm-px-5 mt-5 h-100">
-					<div id="myCarousel" class="carousel1">
-						<div class="carousel1-inner">
-							<div class="carousel1-item active">
+					<div id="myCarousel" class="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
 								<img src="./assets/images/1bottle.png" class="d-block w-100 zoomIn" alt="Slide 1">
 							</div>
-							<div class="carousel1-item">
+							<div class="carousel-item">
 								<img src="./assets/images/1bottle2.png" class="d-block w-100 zoomIn" alt="Slide 2">
 							</div>
-							<div class="carousel1-item">
+							<div class="carousel-item">
 								<img src="./assets/images/1bottle3.png" class="d-block w-100 zoomIn" alt="Slide 3">
 							</div>
-							<div class="carousel1-item">
+							<div class="carousel-item">
 								<img src="./assets/images/1bottle4.png" class="d-block w-100 zoomIn" alt="Slide 4">
 							</div>
 						</div>
-						<a class="carousel1-control-prev text-dark rounded-circle" onclick="prevSlide()" role="button"
-							title="Previos">
+						<a class="carousel-control-prev text-dark rounded-circle" href="#myCarousel" role="button" data-slide="prev" title="Previous">
 							<img src="./assets/icons/1prev.png" alt="prev">
 						</a>
-						<a class="carousel1-control-next text-dark rounded-circle" onclick="nextSlide()" role="button"
-							title="Next">
+						<a class="carousel-control-next text-dark rounded-circle" href="#myCarousel" role="button" data-slide="next" title="Next">
 							<img src="./assets/icons/1next.png" alt="next">
 						</a>
-						<div class="carousel1-indicators">
-							<div class="indicator-bar" onclick="jumpToSlide(0)"></div>
-							<div class="indicator-bar" onclick="jumpToSlide(1)"></div>
-							<div class="indicator-bar" onclick="jumpToSlide(2)"></div>
-							<div class="indicator-bar" onclick="jumpToSlide(3)"></div>
+						<div class="carousel-indicators">
+							<div data-target="#myCarousel" data-slide-to="0" class="indicator-bar active"></div>
+							<div data-target="#myCarousel" data-slide-to="1" class="indicator-bar"></div>
+							<div data-target="#myCarousel" data-slide-to="2" class="indicator-bar"></div>
+							<div data-target="#myCarousel" data-slide-to="3" class="indicator-bar"></div>
 						</div>
 						<div id="active-slide" class="text-dark"></div>
 					</div>
@@ -1101,7 +1099,7 @@
 			</h3>
 			<div class="row justify-content-center align-items-center">
 				<div class="product-info col-md-6 col-lg-6 my-auto sm-px-5 mt-5 h-100">
-					<div id="myCarousel" class="carousel">
+					<div id="myCarousel1" class="carousel">
 						<div class="carousel-inner">
 							<div class="carousel-item active">
 								<img src="./assets/images/1bottle.png" class="d-block w-100 zoomIn" alt="Slide 1">
@@ -1116,19 +1114,17 @@
 								<img src="./assets/images/1bottle4.png" class="d-block w-100 zoomIn" alt="Slide 4">
 							</div>
 						</div>
-						<a class="carousel-control-prev text-dark rounded-circle" onclick="prevSlide()" role="button"
-							title="Previos">
+						<a class="carousel-control-prev text-dark rounded-circle" href="#myCarousel1" role="button" data-slide="prev" title="Previous">
 							<img src="./assets/icons/1prev.png" alt="prev">
 						</a>
-						<a class="carousel-control-next text-dark rounded-circle" onclick="nextSlide()" role="button"
-							title="Next">
+						<a class="carousel-control-next text-dark rounded-circle" href="#myCarousel1" role="button" data-slide="next" title="Next">
 							<img src="./assets/icons/1next.png" alt="next">
 						</a>
 						<div class="carousel-indicators">
-							<div class="indicator-bar" onclick="jumpToSlide(0)"></div>
-							<div class="indicator-bar" onclick="jumpToSlide(1)"></div>
-							<div class="indicator-bar" onclick="jumpToSlide(2)"></div>
-							<div class="indicator-bar" onclick="jumpToSlide(3)"></div>
+							<div data-target="#myCarousel1" data-slide-to="0" class="indicator-bar active"></div>
+							<div data-target="#myCarousel1" data-slide-to="1" class="indicator-bar"></div>
+							<div data-target="#myCarousel1" data-slide-to="2" class="indicator-bar"></div>
+							<div data-target="#myCarousel1" data-slide-to="3" class="indicator-bar"></div>
 						</div>
 						<div id="active-slide" class="text-dark"></div>
 					</div>
@@ -1435,7 +1431,6 @@
 	<script src="./assets/scripts/plugins/sliderTrack.js"></script>
 	<script src="./assets/scripts/plugins/carousel1.js"></script>
 	<script src="./assets/scripts/plugins/carousel2.js"></script>
-	<script src="./assets/scripts/main.js"></script>
 
 </body>
 
