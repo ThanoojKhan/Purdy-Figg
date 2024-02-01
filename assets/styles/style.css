@@ -365,24 +365,24 @@ header {
 
 /* PRODUCT */
 
-.carousel {
+.carousel1 {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
 }
 
-.carousel-inner {
+.carousel1-inner {
 	width: 100%;
 	display: flex;
 	transition: transform 0.5s ease-in-out;
 }
 
-.carousel-item {
+.carousel1-item {
 	width: 100%;
 	flex: 0 0 auto;
 }
 
-.carousel-item.active {
+.carousel1-item.active {
 	opacity: 1;
 }
 
@@ -390,8 +390,8 @@ header {
 	overflow: hidden;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.carousel1-control-prev,
+.carousel1-control-next {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -399,21 +399,21 @@ header {
 	cursor: pointer;
 }
 
-.carousel-control-prev.disabled,
-.carousel-control-next.disabled {
+.carousel1-control-prev.disabled,
+.carousel1-control-next.disabled {
 	cursor: not-allowed;
 	opacity: 0.5;
 }
 
-.carousel-control-prev {
+.carousel1-control-prev {
 	left: 10px;
 }
 
-.carousel-control-next {
+.carousel1-control-next {
 	right: 10px;
 }
 
-.carousel-indicators {
+.carousel1-indicators {
 	display: flex;
 	justify-content: center;
 	margin-top: 10px;
@@ -543,6 +543,60 @@ header {
 }
 
 /* REVIEWS */
+
+.carousel {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.carousel-inner {
+	width: 100%;
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+	width: 100%;
+	flex: 0 0 auto;
+}
+
+.carousel-item.active {
+	opacity: 1;
+}
+
+#myCarousel {
+	overflow: hidden;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.carousel-control-prev.disabled,
+.carousel-control-next.disabled {
+	cursor: not-allowed;
+	opacity: 0.5;
+}
+
+.carousel-control-prev {
+	left: 10px;
+}
+
+.carousel-control-next {
+	right: 10px;
+}
+
+.carousel-indicators {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
 
 .card {
 	border: none !important;
@@ -899,7 +953,6 @@ header {
 	overflow-x: auto;
 }
 
-
 /* FOUNDERS */
 
 @media (max-width: 768px) {
@@ -946,14 +999,14 @@ header {
 	overflow-x: auto;
 	display: flex;
 	scroll-snap-type: x mandatory;
-	margin: 0 -15px !important; 
+	margin: 0 -15px !important;
 }
 
 .post-slide2 {
 	flex: 0 0 auto;
 	scroll-snap-align: start;
 	border-radius: 15px;
-	margin: 0 15px !important; 
+	margin: 0 15px !important;
 }
 
 .background-video1 {
@@ -961,7 +1014,7 @@ header {
 	height: 500px;
 	object-fit: cover;
 	border-radius: 15px;
-	margin: 0 15px !important; 
+	margin: 0 15px !important;
 }
 
 @media (max-width: 768px) {
@@ -987,6 +1040,6 @@ header {
 	background-color: #131E44;
 }
 
-.text-footer{
+.text-footer {
 	color: #92A4E0;
 }
