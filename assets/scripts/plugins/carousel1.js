@@ -42,40 +42,32 @@ class Slider {
                 }
             });
 
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active-indicator', index === slideIndex);
+            });
+
             if (slideIndex === 0 && currentSlide === this.totalSlides - 1) {
-                slides[this.totalSlides - 1].classList.remove('active');
-                slides[slideIndex].classList.add('active');
+                indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active-indicator', index === 0);
+                });
             }
         };
 
         const updateIndicators = () => {
-            indicators.forEach((indicator, index) => {
-                indicator.classList.toggle('active-indicator', index === currentSlide);
-            });
 
             if (currentSlide === 0) {
-                this.prevButton.classList.add('disabled');
-            } else {
-                this.prevButton.classList.remove('disabled');
-            }
-
-            if (currentSlide === this.totalSlides - 1) {
-                this.nextButton.classList.add('disabled');
-            } else {
-                this.nextButton.classList.remove('disabled');
+                indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active-indicator', index === 0);
+                });
             }
         };
 
         const prevSlide = () => {
-            if (currentSlide > 0) {
-                changeSlide(-1);
-            }
+            changeSlide(-1);
         };
 
         const nextSlide = () => {
-            if (currentSlide < this.totalSlides - 1) {
-                changeSlide(1);
-            }
+            changeSlide(1);
         };
 
         updateIndicators();
@@ -103,5 +95,3 @@ class Slider {
         });
     }
 }
-
-
