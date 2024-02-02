@@ -899,6 +899,21 @@ header {
 	overflow-x: auto;
 }
 
+/* ABOUT PRODUCT */
+
+.image-container {
+	position: relative;
+}
+
+.image-container img {
+	width: 100%;
+	height: auto;
+}
+
+.text-left {
+	text-align: left;
+}
+
 /* FOUNDERS */
 
 @media (max-width: 768px) {

@@ -81,7 +81,6 @@ class Slider {
             nextSlide();
         });
 
-
         this.myCarouselElement.addEventListener('transitionend', () => {
             if (currentSlide === 0) {
                 this.myCarouselElement.style.transition = '';
