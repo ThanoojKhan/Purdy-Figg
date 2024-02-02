@@ -81,8 +81,6 @@ class Slider {
             nextSlide();
         });
 
-        console.log(this.prevButton + 'fgh');
-        console.log(this.nextButton + 'fgh');
 
         this.myCarouselElement.addEventListener('transitionend', () => {
             if (currentSlide === 0) {
